@@ -4,6 +4,7 @@ import { Card, CardImg, CardBody, CardTitle, CardText } from "reactstrap";
 export default function Recipe(props) {
   return (
     <div>
+      {console.log(props.recipe)}
       <Card
         style={{
           width: "17rem",
@@ -22,9 +23,6 @@ export default function Recipe(props) {
         <CardBody>
           <CardTitle tag="h5">{props.recipe.title}</CardTitle>
           <CardText>{props.recipe.summary}</CardText>
-          <CardText>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </CardText>
         </CardBody>
       </Card>
     </div>

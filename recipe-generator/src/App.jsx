@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import { Button, Card } from "reactstrap";
+import { Button } from "reactstrap";
 import Recipe from "./components/Recipe";
 
 function App(props) {
@@ -16,7 +16,7 @@ function App(props) {
       const data = await res.json();
       // console.log(data);
       setRecipe(data.recipes[0]);
-      console.log(recipe);
+      // console.log(recipe);
       let title = data.recipes[0].title; // targeting the title of the res.json
       // console.log(title, data.recipes);
     } catch (err) {
